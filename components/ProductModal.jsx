@@ -116,7 +116,11 @@ export default function ProductModal({ product, onClose }) {
             <div className="flex justify-between items-center mb-2">
               {" "}
               <h3 className="text-2xl font-bold mb-1">{product.name}</h3>
-              <span className={` text-xl p-2 ${product.condition === "Good" ? "bg-green-500" : "bg-red-500"} rounded-2xl text-black`}>
+              <span
+                className={` text-xl p-2 ${
+                  product.condition === "Good" ? "bg-green-500" : "bg-red-500"
+                } rounded-2xl text-black`}
+              >
                 {product.condition.toUpperCase()}
               </span>
             </div>
@@ -134,7 +138,7 @@ export default function ProductModal({ product, onClose }) {
 
             <div className="flex gap-3">
               <a
-                href={`https://wa.me/628123456789?text=Saya tertarik dengan ${product.name}`}
+                href={`https://wa.me/6281326305609?text=Saya tertarik dengan ${product.name}`}
                 target="_blank"
                 className="flex-1 bg-green-500 hover:bg-green-400 text-black py-3 rounded-full text-center font-bold"
               >
